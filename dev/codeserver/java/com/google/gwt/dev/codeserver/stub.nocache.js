@@ -22,7 +22,7 @@
   var $head = $doc.head || $doc.getElementsByTagName('head')[0];
   // Compute some codeserver urls so as the user does not need bookmarklets
   var hostName = $wnd.location.hostname;
-  var serverUrl = 'http://' + hostName + ':__SUPERDEV_PORT__';
+  var serverUrl = 'http://' + '__SUPERDEV_BIND_ADDRESS__' + ':__SUPERDEV_PORT__';
   var module = '__MODULE_NAME__';
   var nocacheUrl = serverUrl + '/recompile-requester/' + module;
 

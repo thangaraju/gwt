@@ -124,6 +124,7 @@ class LauncherDir {
     final String template = Resources.toString(url, Charsets.UTF_8);
     return template
         .replace("__MODULE_NAME__", outputModuleName)
+        .replace("__SUPERDEV_BIND_ADDRESS__", String.valueOf(options.getBindAddress()))
         .replace("__SUPERDEV_PORT__", String.valueOf(options.getPort()));
   }
 
